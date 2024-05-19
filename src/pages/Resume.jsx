@@ -39,11 +39,20 @@ const Resume = () => {
           </Button>
         </Row>
 
-        <Row className="resume">
+{/*         <Row className="resume">
           <Document file={resumeLink} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-        </Row>
+        </Row> */}
+
+        <Row className="resume">
+  <a href={resumeLink} target="_blank" rel="noopener noreferrer" className="d-flex justify-content-center">
+    <Document file={resumeLink}>
+      <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+    </Document>
+  </a>
+</Row>
+
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
